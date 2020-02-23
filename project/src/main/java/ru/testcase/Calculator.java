@@ -11,7 +11,6 @@ package ru.testcase;
  * @version 1.2, 14.01.2020
  */
 public class Calculator {
-    public static void main(String[] args) {}
 
     /**
      * Summation of two integer numbers
