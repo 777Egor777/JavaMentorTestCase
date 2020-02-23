@@ -25,7 +25,7 @@ public class Calculator {
         return 0;
     }
 
-    int division(int firstNumber, int secondNumber) {
+    double division(int firstNumber, int secondNumber) {
         return 0;
     }
 }
