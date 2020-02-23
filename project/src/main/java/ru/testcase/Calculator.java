@@ -13,19 +13,47 @@ package ru.testcase;
 public class Calculator {
     public static void main(String[] args) {}
 
+    /**
+     * Summation of two integer numbers
+     * @since 1.1
+     * @param firstNumber
+     * @param secondNumber
+     * @return summation of parameters
+     */
     int summation(int firstNumber, int secondNumber) {
-        return 0;
+        return firstNumber + secondNumber;
     }
 
+    /**
+     * Subtraction of two integer numbers
+     * @since 1.1
+     * @param firstNumber
+     * @param secondNumber
+     * @return subtraction of parameters
+     */
     int subtraction(int firstNumber, int secondNumber) {
-        return 0;
+        return firstNumber - secondNumber;
     }
 
+    /**
+     * Multiplication of two integer numbers
+     * @since 1.1
+     * @param firstNumber
+     * @param secondNumber
+     * @return result of multiplication
+     */
     int multiplication(int firstNumber, int secondNumber) {
-        return 0;
+        return firstNumber * secondNumber;
     }
 
+    /**
+     * Division of two integer numbers
+     * @since 1.1
+     * @param firstNumber
+     * @param secondNumber
+     * @return result of division
+     */
     double division(int firstNumber, int secondNumber) {
-        return 0;
+        return (double)firstNumber / secondNumber;
     }
 }
