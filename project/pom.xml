@@ -79,7 +79,7 @@
           <configuration>
             <archive>
               <manifest>
-                <mainClass>ru.testcase.Calculator</mainClass>
+                <mainClass>ru.testcase.Runner</mainClass>
                 <addClasspath>true</addClasspath>
               </manifest>
             </archive>
