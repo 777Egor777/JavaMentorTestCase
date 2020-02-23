@@ -8,14 +8,14 @@ package ru.testcase;
  * multiplication(*) and division(/)
  * with two integer arguments
  * @author Egor Geraskin
- * @version 1.0, 14.01.2020
+ * @version 1.2, 14.01.2020
  */
 public class Calculator {
     public static void main(String[] args) {}
 
     /**
      * Summation of two integer numbers
-     * @since 1.1
+     * @since 1.2
      * @param firstNumber
      * @param secondNumber
      * @return summation of parameters
@@ -26,7 +26,7 @@ public class Calculator {
 
     /**
      * Subtraction of two integer numbers
-     * @since 1.1
+     * @since 1.2
      * @param firstNumber
      * @param secondNumber
      * @return subtraction of parameters
@@ -37,7 +37,7 @@ public class Calculator {
 
     /**
      * Multiplication of two integer numbers
-     * @since 1.1
+     * @since 1.2
      * @param firstNumber
      * @param secondNumber
      * @return result of multiplication
@@ -48,7 +48,7 @@ public class Calculator {
 
     /**
      * Division of two integer numbers
-     * @since 1.1
+     * @since 1.2
      * @param firstNumber
      * @param secondNumber
      * @return result of division
