@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3059b2ac-712e-4541-81eb-111ae0c1a0a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/testcase/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/testcase/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/testcase/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/testcase/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/testcase/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/testcase/CalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Calculator.class" beforeDir="false" />
-    </list>
+    <list default="true" id="3059b2ac-712e-4541-81eb-111ae0c1a0a8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +11,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
