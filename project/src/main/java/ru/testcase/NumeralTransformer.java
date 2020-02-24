@@ -106,6 +106,18 @@ public class NumeralTransformer {
     }
 
     /**
+     * Checks if param - Roman
+     * or Arabic numeral
+     * @param numeralString
+     * @return true - if param - numeral
+     *         false - otherwise
+     */
+    public boolean isCorrectNumeral(String numeralString) {
+        return isCorrectArabicNumeral(numeralString) ||
+               isCorrectRomanNumeral(numeralString);
+    }
+
+    /**
      * Method correctly transfer
      * Arabic number from 1 to 100
      * into Rome numeral

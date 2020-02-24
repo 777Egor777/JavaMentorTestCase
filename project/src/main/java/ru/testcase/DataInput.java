@@ -73,24 +73,41 @@ public class DataInput {
 
     /**
      * Parse dataString
-     * @throws IOException
+     * @throws IOException if data is incorrect
      */
     private void parseData() throws IOException {
-        this.dataString = this.dataString.trim();
         String[] dataStringParts = this.dataString.split(" ");
         if (dataStringParts.length != 3) {
             throw new IOException("Incorrect input string");
         }
+        this.parseNumbers(dataStringParts[0], dataStringParts[2]);
+        this.parseOperation(dataStringParts[1]);
+    }
 
-        if (this.isArabicNumeral(dataStringParts[0]) &&
-            this.isArabicNumeral(dataStringParts[2])) {
-            this.firstArgument = Integer.parseInt(dataStringParts[0]);
-            this.secondArgument = Integer.parseInt(dataStringParts[2]);
-        } else if (this.isRomanNumeral(dataStringParts[0]) &&
-                   this.isRomanNumeral(dataStringParts[2])) {
+    /**
+     * Parse numbers and checks
+     * if they are correct.
+     * Numbers can be Roman or Arabic.
+     * But they should be both Roman
+     * or both Arabic
+     * @param firstNumberLine line, contains first number-argument
+     * @param secondNumberLine line contains second number - argument
+     * @throws IOException if numbers
+     *         are incorrect
+     */
+    private void parseNumbers(String firstNumberLine, String secondNumberLine) throws IOException{
 
-        } else {
-            throw new IOException("Numbers must be both Rome or both Arabic, from 1 to 10");
-        }
+    }
+
+    /**
+     * Parse operation and checks
+     * if she is correct
+     * Operation can be:
+     * '+', '-', '*' or '/'
+     * @param operationLine line contains operation
+     * @throws IOException if operation is incorrect
+     */
+    private void parseOperation(String operationLine) throws IOException {
+
     }
 }
