@@ -29,11 +29,16 @@ public class DataInput {
     private int secondArgument;
 
     /**
-     * one if this operations:
+     * one of this operations:
      * +, -, *, /
      */
     private char operation;
 
+    /**
+     * true - if arguments are Rome numerals
+     * false - otherwise
+     */
+    private boolean isRomeNumeral;
 
     /**
      * Getter for firstArgument
@@ -57,6 +62,14 @@ public class DataInput {
      */
     public char getOperation() {
         return this.operation;
+    }
+
+    /**
+     * Getter for isRomeNumeral
+     * @return this.isRomeNumeral
+     */
+    public boolean isRomeNumeral() {
+        return this.isRomeNumeral;
     }
 
     /**
