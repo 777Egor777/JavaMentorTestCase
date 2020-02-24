@@ -109,7 +109,24 @@ public class DataInput {
      *         are incorrect
      */
     private void parseNumbers(String firstNumberLine, String secondNumberLine) throws IOException{
+        NumeralTransformer transformer = new NumeralTransformer();
+        if (!transformer.isCorrectNumeral(firstNumberLine) ||
+            !transformer.isCorrectNumeral(secondNumberLine) ) {
+            throw new IOException("Incorrect arguments");
+        }
 
+        if (transformer.isCorrectArabicNumeral(firstNumberLine) && transformer.isCorrectArabicNumeral(secondNumberLine)) {
+            this.firstArgument = Integer.parseInt(firstNumberLine);
+            this.secondArgument = Integer.parseInt(secondNumberLine);
+            this.isRomeNumeral = false;
+        } else
+            if (transformer.isCorrectRomanNumeral(firstNumberLine) && transformer.isCorrectRomanNumeral(secondNumberLine)) {
+                this.firstArgument = transformer.changeRomeToArabic(firstNumberLine);
+                this.secondArgument = transformer.changeRomeToArabic(secondNumberLine);
+                this.isRomeNumeral = true;
+            } else {
+                throw new IOException("Incorrect arguments");
+            }
     }
 
     /**
@@ -121,6 +138,18 @@ public class DataInput {
      * @throws IOException if operation is incorrect
      */
     private void parseOperation(String operationLine) throws IOException {
-
+        if (operationLine.length() != 1) {
+            throw new IOException("Incorrect operation type");
+        } else {
+            char operation = operationLine.charAt(0);
+            switch (operation) {
+                case '+': break;
+                case '-': break;
+                case '*': break;
+                case '/': break;
+                default: throw new IOException("Incorrect operation type");
+            }
+            this.operation = operation;
+        }
     }
 }

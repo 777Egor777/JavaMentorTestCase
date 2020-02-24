@@ -52,6 +52,7 @@ public class Runner {
                       break;
             case '/': result = calculator.division(firstNumber, secondNumber);
                       break;
+            default: throw new IOException("Incorrect operation");
         }
 
         return result;

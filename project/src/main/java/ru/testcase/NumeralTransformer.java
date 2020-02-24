@@ -37,6 +37,7 @@ public class NumeralTransformer {
     private Map<Integer, String> arabicToRomanNumeralsMap;
     {
         this.arabicToRomanNumeralsMap = new HashMap<>();
+        this.arabicToRomanNumeralsMap.put(0, "");
         this.arabicToRomanNumeralsMap.put(1, "I");
         this.arabicToRomanNumeralsMap.put(2, "II");
         this.arabicToRomanNumeralsMap.put(3, "III");
@@ -113,8 +114,8 @@ public class NumeralTransformer {
      *         false - otherwise
      */
     public boolean isCorrectNumeral(String numeralString) {
-        return isCorrectArabicNumeral(numeralString) ||
-               isCorrectRomanNumeral(numeralString);
+        return this.isCorrectArabicNumeral(numeralString) ||
+               this.isCorrectRomanNumeral(numeralString);
     }
 
     /**
@@ -128,12 +129,12 @@ public class NumeralTransformer {
     public String changeArabicToRome(int arabicNumber) {
         String result = "";
         if (arabicNumber >= 1 && arabicNumber <= 10) {
-            result = arabicToRomanNumeralsMap.get(arabicNumber);
+            result = this.arabicToRomanNumeralsMap.get(arabicNumber);
         } else {
             int decimalPart = arabicNumber / 10;
             int singlePart = arabicNumber % 10;
-            result = decimalArabicToRomanNumeralsMap.get(decimalPart) +
-                     arabicToRomanNumeralsMap.get(singlePart);
+            result = this.decimalArabicToRomanNumeralsMap.get(decimalPart) +
+                     this.arabicToRomanNumeralsMap.get(singlePart);
         }
 
         return result;
@@ -148,6 +149,6 @@ public class NumeralTransformer {
      *         in Arabic numerals
      */
     public int changeRomeToArabic(String romeNumber) {
-        return romanToArabicNumeralsMap.get(romeNumber);
+        return this.romanToArabicNumeralsMap.get(romeNumber);
     }
 }

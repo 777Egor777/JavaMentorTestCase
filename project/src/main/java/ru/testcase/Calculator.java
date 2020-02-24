@@ -55,9 +55,6 @@ public class Calculator {
      * @return result of division
      */
     int division(int firstNumber, int secondNumber) throws IOException {
-        if (firstNumber % secondNumber != 0) {
-            throw new IOException("Not an Integer result");
-        }
         return firstNumber / secondNumber;
     }
 }
