@@ -114,15 +114,28 @@ public class NumeralTransformer {
      * in Rome numerals
      */
     public String changeArabicToRome(int arabicNumber) {
-        return "";
+        String result = "";
+        if (arabicNumber >= 1 && arabicNumber <= 10) {
+            result = arabicToRomanNumeralsMap.get(arabicNumber);
+        } else {
+            int decimalPart = arabicNumber / 10;
+            int singlePart = arabicNumber % 10;
+            result = decimalArabicToRomanNumeralsMap.get(decimalPart) +
+                     arabicToRomanNumeralsMap.get(singlePart);
+        }
+
+        return result;
     }
 
     /**
-     *
+     * Method correctly trasfer
+     * Rome number from I to X
+     * into Arabic numeral
      * @param romeNumber
-     * @return
+     * @return representation of param
+     *         in Arabic numerals
      */
     public int changeRomeToArabic(String romeNumber) {
-        return 0;
+        return romanToArabicNumeralsMap.get(romeNumber);
     }
 }
