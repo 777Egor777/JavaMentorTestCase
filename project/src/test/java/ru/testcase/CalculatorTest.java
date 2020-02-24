@@ -3,6 +3,8 @@ package ru.testcase;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.io.IOException;
+
 import static org.junit.Assert.*;
 
 public class CalculatorTest {
@@ -26,8 +28,8 @@ public class CalculatorTest {
     }
 
     @Test
-    public void division() {
+    public void division() throws IOException {
         Calculator calc = new Calculator();
-        Assert.assertEquals(calc.division(23, 4), 5.75, 0.00001);
+        Assert.assertEquals(calc.division(24, 4), 6);
     }
 }

@@ -4,6 +4,9 @@
     <list default="true" id="3059b2ac-712e-4541-81eb-111ae0c1a0a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/testcase/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/testcase/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/testcase/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/testcase/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/testcase/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/testcase/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Calculator.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +24,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1YDSVh8FKIDAE2rNUcLsXlGSh45" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -51,6 +61,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.testcase.Runner" />
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.testcase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Runner" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />

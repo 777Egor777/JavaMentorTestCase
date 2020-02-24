@@ -1,5 +1,7 @@
 package ru.testcase;
 
+import java.io.IOException;
+
 /**
  * Class implements simple
  * calculator, that could
@@ -52,7 +54,10 @@ public class Calculator {
      * @param secondNumber
      * @return result of division
      */
-    double division(int firstNumber, int secondNumber) {
-        return (double)firstNumber / secondNumber;
+    int division(int firstNumber, int secondNumber) throws IOException {
+        if (firstNumber % secondNumber != 0) {
+            throw new IOException("Not an Integer result");
+        }
+        return firstNumber / secondNumber;
     }
 }
